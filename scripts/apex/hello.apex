@@ -5,6 +5,12 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+      Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
+    public static Integer convertMinutesToMilliseconds(Integer minutes) {
+        Integer milliseconds;
+
+        milliseconds = minutes * 60000;
+
+        return milliseconds; // Replace null with the variable you used to store the result
+    }    
+    System.debug('the conversion is ' + convertMinutesToMilliseconds(5));

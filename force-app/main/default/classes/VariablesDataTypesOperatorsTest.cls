@@ -82,8 +82,7 @@ public class VariablesDataTypesOperatorsTest {
 	static void testCreateSentence() {
 		// Test with noun 'cat' and verb 'jumping'
 		String result = VariablesDataTypesOperators.createSentence('cat', 'jumping', '!');
-		Assert.areEqual(
-			'The cat is jumping!',
+		Assert.areEqual( 'The cat is jumping!',
 			result,
 			'Incorrect createSentence result for noun "cat" and verb "jumping"'
 		);
